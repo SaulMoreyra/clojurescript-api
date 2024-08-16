@@ -1,0 +1,27 @@
+{
+  "name": "clojurescipt-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:server": "npx nodemon",
+    "watch:cljs": "npx shadow-cljs watch app",
+    "start": "yarn compile & yarn server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db:commit": "npx prisma migrate dev --name",
+    "db:migrate": "npx prisma migrate deploy"
+  },
+  "keywords": [],
+  "author": "SaulMoreyra",
+  "license": "ISC",
+  "devDependencies": {
+    "cljs": "^1.2.0",
+    "prisma": "^5.18.0",
+    "shadow-cljs": "^2.28.12"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.18.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  }
+}
