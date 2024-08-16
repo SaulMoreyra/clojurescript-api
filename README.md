@@ -1,4 +1,4 @@
-# Project Name
+# CLojureScript API
 
 ## Description
 
