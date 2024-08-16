@@ -1,0 +1,5 @@
+{
+  "watch": ["src", "rest-api"],
+  "ext": "js,cljs",
+  "exec": "node -r ./dist/main.js"
+}
